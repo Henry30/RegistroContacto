@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.TextView;
 
 public class VerContacto extends AppCompatActivity {
-
+    private static TextView tvNombreCompleto;
+    private static TextView tvFechaNacimiento;
+    private static TextView tvTelefono;
+    private static TextView tvEmail;
+    private static TextView tvDescripcion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +24,11 @@ public class VerContacto extends AppCompatActivity {
         String vtxtEmail=extras.getString(getResources().getString(R.string.email));
         String vtxtDescripcion=extras.getString(getResources().getString(R.string.descripcion));
 
-        TextView tvNombreCompleto=(TextView) findViewById(R.id.tvNombreCompleto);
-        TextView tvFechaNacimiento=(TextView)findViewById(R.id.tvFechaNacimiento);
-        TextView tvTelefono=(TextView)findViewById(R.id.tvTelefono);
-        TextView tvEmail=(TextView)findViewById(R.id.tvEmail);
-        TextView tvDescripcion=(TextView)findViewById(R.id.tvDescripcion);
+        tvNombreCompleto=(TextView) findViewById(R.id.tvNombreCompleto);
+        tvFechaNacimiento=(TextView)findViewById(R.id.tvFechaNacimiento);
+        tvTelefono=(TextView)findViewById(R.id.tvTelefono);
+        tvEmail=(TextView)findViewById(R.id.tvEmail);
+        tvDescripcion=(TextView)findViewById(R.id.tvDescripcion);
 
         tvNombreCompleto.setText(vtxtNombreCompleto);
         tvFechaNacimiento.setText(vtxtFechaNacimiento);
@@ -34,20 +38,14 @@ public class VerContacto extends AppCompatActivity {
     }
 
     public void btnEditar_Click(View v) {
-        //Intent intActEditarContacto= new Intent(this,MainActivity.class);
-        //startActivity(intActEditarContacto);
 
         Intent intMainActivity= new Intent(this,MainActivity.class);
-        TextView txtNombreCompleto=(TextView) findViewById(R.id.tvNombreCompleto);
-        TextView txtFechaNacimiento=(TextView) findViewById(R.id.tvFechaNacimiento);
-        TextView txtTelefono=(TextView) findViewById(R.id.tvTelefono);
-        TextView txtEmail=(TextView) findViewById(R.id.tvEmail);
-        TextView txtDescripcion=(TextView) findViewById(R.id.tvDescripcion);
-        intMainActivity.putExtra(getResources().getString(R.string.nombreCompleto),txtNombreCompleto.getText().toString());
-        intMainActivity.putExtra(getResources().getString(R.string.fechaNacimiento),txtFechaNacimiento.getText().toString());
-        intMainActivity.putExtra(getResources().getString(R.string.telefono),txtTelefono.getText().toString());
-        intMainActivity.putExtra(getResources().getString(R.string.email),txtEmail.getText().toString());
-        intMainActivity.putExtra(getResources().getString(R.string.descripcion),txtDescripcion.getText().toString());
+
+        intMainActivity.putExtra(getResources().getString(R.string.nombreCompleto),tvNombreCompleto.getText().toString());
+        intMainActivity.putExtra(getResources().getString(R.string.fechaNacimiento),tvFechaNacimiento.getText().toString());
+        intMainActivity.putExtra(getResources().getString(R.string.telefono),tvTelefono.getText().toString());
+        intMainActivity.putExtra(getResources().getString(R.string.email),tvEmail.getText().toString());
+        intMainActivity.putExtra(getResources().getString(R.string.descripcion),tvDescripcion.getText().toString());
         startActivity(intMainActivity);
         finish();
     }
