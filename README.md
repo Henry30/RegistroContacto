@@ -11,10 +11,10 @@ Pantalla Con Datos Llenados
 ![Alt text](https://cloud.githubusercontent.com/assets/17391733/18820595/98dfceac-8364-11e6-9b67-7a86cf4e6fc9.png)
 
 Vista del Registro de Contacto
-![Alt text](https://cloud.githubusercontent.com/assets/17391733/18820623/c87c2bba-8364-11e6-8c21-282938a33c08.png)
+![Alt text](https://cloud.githubusercontent.com/assets/17391733/18821336/cb7b2c84-836a-11e6-88df-4b30d8458b24.png)
 
 Editar Registro de Contacto
-![Alt text](https://cloud.githubusercontent.com/assets/17391733/18821336/cb7b2c84-836a-11e6-88df-4b30d8458b24.png)
+![Alt text](https://cloud.githubusercontent.com/assets/17391733/18820595/98dfceac-8364-11e6-9b67-7a86cf4e6fc9.png)
 
 Codigo Activity_Main.xml
 <?xml version="1.0" encoding="utf-8"?>
