@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">RegistroContacto</string>
+    <string name="mensaje_btnFecha">Seleccionar Fecha</string>
+    <string name="mensaje_btnGrabar">Siguiente</string>
+    <string name="mensaje_btnEditar">Editar</string>
+    <string name="mensaje_txtNombreCompleto">Nombre Completo: </string>
+    <string name="mensaje_txtFechaNacimiento">Fecha Nacimiento: </string>
+    <string name="mensaje_txtTelefono">Nro de Teléfono: </string>
+    <string name="mensaje_txtEmail">Email: </string>
+    <string name="mensaje_txtDescripcion">Descripción del Contacto: </string>
+
+    <string name="nombreCompleto">nombreCompleto</string>
+    <string name="fechaNacimiento">fechaNacimiento</string>
+    <string name="telefono">telefono</string>
+    <string name="email">email</string>
+    <string name="descripcion">descripcion</string>
+</resources>
