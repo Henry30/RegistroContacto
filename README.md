@@ -345,7 +345,7 @@ public class VerContacto extends AppCompatActivity {
 }
 
 Archivo string.xml
-<resources>
+
     <string name="app_name">Registro de Contacto</string>
     <string name="tutilo_confirmarDatos">Confirmar Datos</string>
     <string name="mensaje_btnFecha">Seleccionar Fecha</string>
@@ -362,14 +362,8 @@ Archivo string.xml
     <string name="telefono">telefono</string>
     <string name="email">email</string>
     <string name="descripcion">descripcion</string>
-</resources>
 
-archivo dimens.xml
-<resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="size_LetraTituloConfirmarDatos">20dp</dimen>
-</resources>
+
+
 
 
