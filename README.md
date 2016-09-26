@@ -14,10 +14,9 @@ Vista del Registro de Contacto
 ![Alt text](https://cloud.githubusercontent.com/assets/17391733/18820623/c87c2bba-8364-11e6-8c21-282938a33c08.png)
 
 Editar Registro de Contacto
-![Alt text](https://cloud.githubusercontent.com/assets/17391733/18820595/98dfceac-8364-11e6-9b67-7a86cf4e6fc9.png)
+![Alt text](https://cloud.githubusercontent.com/assets/17391733/18821336/cb7b2c84-836a-11e6-88df-4b30d8458b24.png)
 
 Codigo Activity_Main.xml
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -64,6 +63,8 @@ Codigo Activity_Main.xml
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/mensaje_txtDescripcion"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
         />
     <Button
         android:id="@+id/btnGrabar"
@@ -73,6 +74,7 @@ Codigo Activity_Main.xml
         android:onClick="btnSiguiente_Click"
         />
 </LinearLayout>
+
 
 Clase MainActivity
 
@@ -172,7 +174,6 @@ public class MainActivity extends AppCompatActivity {
 }
 
 Activity_ver_contacto.xml
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -184,6 +185,15 @@ Activity_ver_contacto.xml
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.henrymeza.registrocontacto.VerContacto">
+    <TextView
+        android:id="@+id/tvTituloConfirmarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tutilo_confirmarDatos"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_LetraTituloConfirmarDatos"
+        android:layout_gravity="center"
+        />
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -286,6 +296,7 @@ Activity_ver_contacto.xml
 
 </LinearLayout>
 
+
 Clase VerContacto
 
 public class VerContacto extends AppCompatActivity {
@@ -332,5 +343,33 @@ public class VerContacto extends AppCompatActivity {
         finish();
     }
 }
+
+Archivo string.xml
+<resources>
+    <string name="app_name">Registro de Contacto</string>
+    <string name="tutilo_confirmarDatos">Confirmar Datos</string>
+    <string name="mensaje_btnFecha">Seleccionar Fecha</string>
+    <string name="mensaje_btnGrabar">Siguiente</string>
+    <string name="mensaje_btnEditar">Editar Datos</string>
+    <string name="mensaje_txtNombreCompleto">Nombre Completo: </string>
+    <string name="mensaje_txtFechaNacimiento">Fecha Nacimiento: </string>
+    <string name="mensaje_txtTelefono">Nro de Teléfono: </string>
+    <string name="mensaje_txtEmail">Email: </string>
+    <string name="mensaje_txtDescripcion">Descripción del Contacto: </string>
+
+    <string name="nombreCompleto">nombreCompleto</string>
+    <string name="fechaNacimiento">fechaNacimiento</string>
+    <string name="telefono">telefono</string>
+    <string name="email">email</string>
+    <string name="descripcion">descripcion</string>
+</resources>
+
+archivo dimens.xml
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="size_LetraTituloConfirmarDatos">20dp</dimen>
+</resources>
 
 
